@@ -16,6 +16,6 @@ async def on_ready():
 async def hola(ctx):
     await ctx.send('¡Hola! Soy tu Tutor ALP y ya estoy vivo.')
 
-# IMPORTANTE: En Render tu variable se llama DISCORD_TOKEN
+# IMPORTANTE: Asegúrate de que en Render la variable sea DISCORD_TOKEN
 TOKEN = os.getenv('DISCORD_TOKEN')
 bot.run(TOKEN)
