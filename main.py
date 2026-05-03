@@ -18,4 +18,8 @@ async def hola(ctx):
 
 # IMPORTANTE: Asegúrate de que en Render la variable sea DISCORD_TOKEN
 TOKEN = os.getenv('DISCORD_TOKEN')
-bot.run(TOKEN)
+
+if TOKEN is None:
+    print("❌ ERROR: No se encuentra la variable DISCORD_TOKEN en Render")
+else:
+    bot.run(TOKEN)
