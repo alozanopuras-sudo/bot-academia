@@ -22,4 +22,4 @@ TOKEN = os.getenv('DISCORD_TOKEN')
 if TOKEN is None:
     print("❌ ERROR: No se encuentra la variable DISCORD_TOKEN en Render")
 else:
-    bot.run(TOKEN)
+    bot.run('TU_TOKEN_REAL_AQUI_ENTRE_COMILLAS')
