@@ -15,10 +15,5 @@ async def on_ready():
 async def hola(ctx):
     await ctx.send('¡Hola! Soy tu Tutor ALP y ya estoy vivo.')
 
-# Esto lee la llave de la pestaña Ambiente de Render
 TOKEN = os.getenv('DISCORD_TOKEN')
-
-if TOKEN:
-    bot.run(TOKEN)
-else:
-    print("❌ ERROR: No se encontró la variable DISCORD_TOKEN")
+bot.run(TOKEN)
